@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width"=device-width,initial-scale=1.0">
-        <tittle>Rent</tittle>
-    </head>
-    <body>
-        <header>
-            <h1>Buy</h1>
-            <nav>
-                <a href="index.html">Home</a>|
-                <a href="buy.html">Buy</a>|
-                <a href="rent.html">Rent</a>
-                <a href="valuation.html">Valuation</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealtyCo - Rent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">RealtyCo</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="buy.html">Buy</a>
+        <a href="rent.html">Rent</a>
+        <a href="valuation.html">Valuation</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+
+        
+        <div class="hero">
+            <h2>🏡 Find your perfect rental home</h2>
+            <p>Flexible terms, verified listings</p>
+        </div>
+
+        
+        <div class="filter-bar">
+            <button class="filter-btn">Apartments</button>
+            <button class="filter-btn">Houses</button>
+            <select class="filter-btn">
+                <option>Price Range ▼</option>
+                <option>Under $1,000</option>
+                <option>$1,000 - $2,000</option>
+                <option>$2,000 - $3,000</option>
+                <option>$3,000+</option>
+            </select>
+            <select class="filter-btn">
+                <option>Bedrooms ▼</option>
+                <option>Studio</option>
+                <option>1 Bed</option>
+                <option>2 Beds</option>
+                <option>3+ Beds</option>
+            </select>
+            <button class="apply-btn">Apply Filters</button>
+        </div>
+
+        
+        <div class="listings-grid">
+            <!-- Card 1 -->
+            <div class="property-card">
+                <div class="property-img">📷 Photo</div>
+                <h3>Modern 2BR Apt</h3>
+                <p class="price">$1,500/month</p>
+                <p class="features">2 beds · 1 bath</p>
+                <p class="location">📍 Downtown area</p>
+                <button class="apply-now">Apply Now</button>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-img">📷 Photo</div>
+                <h3>Cozy 3BR House</h3>
+                <p class="price">$2,200/month</p>
+                <p class="features">3 beds · 2 baths</p>
+                <p class="location">📍 Suburb area</p>
+                <button class="apply-now">Apply Now</button>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-img">📷 Photo</div>
+                <h3>Luxury Studio</h3>
+                <p class="price">$1,800/month</p>
+                <p class="features">1 bed · 1 bath</p>
+                <p class="location">📍 City center</p>
+                <button class="apply-now">Apply Now</button>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-img">📷 Photo</div>
+                <h3>Family 4BR Home</h3>
+                <p class="price">$3,200/month</p>
+                <p class="features">4 beds · 3 baths</p>
+                <p class="location">📍 Near schools</p>
+                <button class="apply-now">Apply Now</button>
+            </div>
+        </div>
+
+        
+        <div class="load-more">
+            <button>Load More Results</button>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 RealtyCo | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+</body>
 </html>

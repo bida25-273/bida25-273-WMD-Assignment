@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width"=device-width,initial-scale=1.0">
-        <tittle>Valuation</tittle>
-    </head>
-    <body>
-        <header>
-            <h1>Buy</h1>
-            <nav>
-                <a href="index.html">Home</a>|
-                <a href="buy.html">Buy</a>|
-                <a href="rent.html">Rent</a>
-                <a href="valuation.html">Valuation</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealtyCo - Property Valuation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">RealtyCo</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="buy.html">Buy</a>
+        <a href="rent.html">Rent</a>
+        <a href="valuation.html">Valuation</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+        <div class="hero">
+            <h2>Get your property's market value</h2>
+            <p>Free instant valuation - Know what your home is worth</p>
+        </div>
+        <div class="two-col">
+            <div class="form-box">
+                <h3>Valuation Form</h3>
+                <form action="#" method="post">
+                    <label for="property-type">Property Type:</label>
+                    <select id="property-type" name="property-type" required>
+                        <option value="">Select property type</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="townhouse">Townhouse</option>
+                        <option value="villa">Villa</option>
+                        <option value="land">Land</option>
+                    </select>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter full property address" required>
+
+                    <label for="bedrooms">Bedrooms:</label>
+                    <input type="number" id="bedrooms" name="bedrooms" min="0" max="10" placeholder="Number of bedrooms" required>
+
+                    <label for="bathrooms">Bathrooms:</label>
+                    <input type="number" id="bathrooms" name="bathrooms" min="0" max="10" placeholder="Number of bathrooms" required>
+
+                    <label for="year-built">Year built:</label>
+                    <input type="number" id="year-built" name="year-built" min="1800" max="2026" placeholder="e.g., 2015">
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+            <div class="info-box">
+                <h3>📋 Info Box</h3>
+                <div class="info-item">
+                    <span class="info-icon">✅</span>
+                    <span>We'll respond within 24h</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📊</span>
+                    <span>Accuracy: 95%</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🏡</span>
+                    <span>Free valuation report</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <span>Call us: +267 123 4567</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>© 2026 RealtyCo | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+</body>
 </html>
