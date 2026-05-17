@@ -8,98 +8,153 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-    <div class="logo">RealtyCo</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="buy.html">Buy</a>
-        <a href="rent.html">Rent</a>
-        <a href="valuation.html">Valuation</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+    <div class="logo">🏠 RealtyCo</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="rent.html">Rent</a></li>
+        <li><a href="valuation.html">Valuation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </header>
 
+<section class="hero">
+    <div class="hero-content">
+        <h2>🏡 Find your perfect rental home</h2>
+        <p>Flexible terms, verified listings</p>
+    </div>
+</section>
 
-        
-        <div class="hero">
-            <h2>🏡 Find your perfect rental home</h2>
-            <p>Flexible terms, verified listings</p>
-        </div>
+<section class="filters">
+    <button id="rentApartmentBtn">Apartments</button>
+    <button id="rentHouseBtn">Houses</button>
+    <select id="priceRangeSelect">
+        <option value="all">All Prices</option>
+        <option value="under1000">Under $1,000</option>
+        <option value="1000-2000">$1,000 - $2,000</option>
+        <option value="2000-3000">$2,000 - $3,000</option>
+        <option value="3000plus">$3,000+</option>
+    </select>
+    <select id="bedroomSelect">
+        <option value="all">All Bedrooms</option>
+        <option value="studio">Studio</option>
+        <option value="1">1 Bed</option>
+        <option value="2">2 Beds</option>
+        <option value="3">3+ Beds</option>
+    </select>
+    <button id="applyRentFilterBtn">Apply Filters</button>
+    <button id="resetRentBtn">Reset Filters</button>
+</section>
 
-        
-        <div class="filter-bar">
-            <button class="filter-btn">Apartments</button>
-            <button class="filter-btn">Houses</button>
-            <select class="filter-btn">
-                <option>Price Range ▼</option>
-                <option>Under $1,000</option>
-                <option>$1,000 - $2,000</option>
-                <option>$2,000 - $3,000</option>
-                <option>$3,000+</option>
-            </select>
-            <select class="filter-btn">
-                <option>Bedrooms ▼</option>
-                <option>Studio</option>
-                <option>1 Bed</option>
-                <option>2 Beds</option>
-                <option>3+ Beds</option>
-            </select>
-            <button class="apply-btn">Apply Filters</button>
-        </div>
-
-        
-        <div class="listings-grid">
-            <div class="property-card">
-                <div class="property-img"><img src="images.jpg/rental-1.jpg.jfif" alt="Rent"></div>
-                <h3>Modern 2BR Apt</h3>
-                <p class="price">$1,500/month</p>
-                <p class="features">2 beds · 1 bath</p>
-                <p class="location">📍 Downtown area</p>
-                <button class="apply-now">Apply Now</button>
-            </div>
-            
-            <div class="property-card">
-                <div class="property-img"><img src="images.jpg/rental-2.jpg.jfif" alt="rental"></div>
-                <h3>Cozy 3BR House</h3>
-                <p class="price">$2,200/month</p>
-                <p class="features">3 beds · 2 baths</p>
-                <p class="location">📍 Suburb area</p>
-                <button class="apply-now">Apply Now</button>
-            </div>
-            
-            <div class="property-card">
-                <div class="property-img"><img src="images.jpg/rental-3.jpg.jfif" alt="rental"></div>
-                <h3>Luxury Studio</h3>
-                <p class="price">$1,800/month</p>
-                <p class="features">1 bed · 1 bath</p>
-                <p class="location">📍 City center</p>
-                <button class="apply-now">Apply Now</button>
-            </div>
-            
-            <div class="property-card">
-                <div class="property-img"><img src="images.jpg/rental-4.jpg.jfif" alt="rental"></div>
-                <h3>Family 4BR Home</h3>
-                <p class="price">$3,200/month</p>
-                <p class="features">4 beds · 3 baths</p>
-                <p class="location">📍 Near schools</p>
-                <button class="apply-now">Apply Now</button>
-            </div>
-        </div>
-
-        
-        <div class="load-more">
-            <button>Load More Results</button>
+<section class="properties">
+    <!-- Apartment 1 -->
+    <div class="property-card apartment" data-price="1500" data-bedroom="2">
+        <img src="images.jpg/rental-1.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Modern 2BR Apt</h3>
+            <p class="price">$1,500/month</p>
+            <p class="features">2 beds · 1 bath · Apartment</p>
+            <p class="location">📍 Downtown area</p>
+            <button class="detailsBtn">Apply Now</button>
         </div>
     </div>
 
-    
-    <footer>
-        <div class="container">
-            <p>© 2026 RealtyCo |Privacy|Terms</p> 
+    <!-- House 1 -->
+    <div class="property-card house" data-price="2200" data-bedroom="3">
+        <img src="images.jpg/rental-2.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Cozy 3BR House</h3>
+            <p class="price">$2,200/month</p>
+            <p class="features">3 beds · 2 baths · House</p>
+            <p class="location">📍 Suburb area</p>
+            <button class="detailsBtn">Apply Now</button>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    </div>
+
+    <!-- Apartment 2 -->
+    <div class="property-card apartment" data-price="1800" data-bedroom="1">
+        <img src="images.jpg/rental-3.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Luxury Studio</h3>
+            <p class="price">$1,800/month</p>
+            <p class="features">1 bed · 1 bath · Apartment</p>
+            <p class="location">📍 City center</p>
+            <button class="detailsBtn">Apply Now</button>
+        </div>
+    </div>
+
+    <!-- House 2 -->
+    <div class="property-card house" data-price="3200" data-bedroom="4">
+        <img src="images.jpg/rental-4.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Family 4BR Home</h3>
+            <p class="price">$3,200/month</p>
+            <p class="features">4 beds · 3 baths · House</p>
+            <p class="location">📍 Near schools</p>
+            <button class="detailsBtn">Apply Now</button>
+        </div>
+    </div>
+
+    <!-- Extra House 3 -->
+    <div class="property-card house" data-price="2800" data-bedroom="3">
+        <img src="images.jpg/rental-5.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Spacious Ranch Home</h3>
+            <p class="price">$2,800/month</p>
+            <p class="features">3 beds · 2.5 baths · House</p>
+            <p class="location">📍 Golf course community</p>
+            <button class="detailsBtn">Apply Now</button>
+        </div>
+    </div>
+
+    <!-- Extra House 4 -->
+    <div class="property-card house" data-price="3800" data-bedroom="4">
+        <img src="images.jpg/rental-6.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Modern Executive Home</h3>
+            <p class="price">$3,800/month</p>
+            <p class="features">4 beds · 3.5 baths · House</p>
+            <p class="location">📍 Lakeside district</p>
+            <button class="detailsBtn">Apply Now</button>
+        </div>
+    </div>
+
+    <!-- Extra House 5 -->
+    <div class="property-card house" data-price="1900" data-bedroom="2">
+        <img src="images.jpg/rental-7.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Charming Bungalow</h3>
+            <p class="price">$1,900/month</p>
+            <p class="features">2 beds · 1 bath · House</p>
+            <p class="location">📍 Historic district</p>
+            <button class="detailsBtn">Apply Now</button>
+        </div>
+    </div>
+
+    <!-- Extra House 6 -->
+    <div class="property-card house" data-price="4200" data-bedroom="5">
+        <img src="images.jpg/rental-8.jpg.jfif" alt="Rental">
+        <div class="property-info">
+            <h3>Luxury Waterfront Home</h3>
+            <p class="price">$4,200/month</p>
+            <p class="features">5 beds · 4 baths · House</p>
+            <p class="location">📍 Waterfront estate</p>
+            <button class="detailsBtn">Apply Now</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 RealtyCo | Privacy | Terms</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
