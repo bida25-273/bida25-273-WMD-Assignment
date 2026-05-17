@@ -68,27 +68,4 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Message sent! We'll get back to you soon.");
             contactForm.reset();
         };
-    }/ Search button
-document.getElementById("searchBtn")
-.addEventListener("click", function () {
-
-    alert("Searching listings...");
-});
-
-
-// Details buttons
-const detailButtons =
-document.querySelectorAll(".detailsBtn");
-
-detailButtons.forEach(function(button) {
-
-    button.addEventListener("click", function () {
-
-        alert("Showing property details");
-
-    });
-
-});
-
-    console.log("Universal script loaded – all buttons should work now.");
-});
+    
