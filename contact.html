@@ -3,74 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealtyCo | Contact</title>
+    <title>RealtyCo Contact Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header -->
+    <header>
+        <div class="logo">RealtyCo</div>
 
-<header class="navbar">
-    <div class="logo">RealtyCo</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="buy.html">Buy</a>
-        <a href="rent.html">Rent</a>
-        <a href="valuation.html">Valuation</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="valuation.html">Valuation</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>We're here to help</h1>
+    </section>
 
-<section class="page-title">
-    <h1>We're here to help</h1>
-</section>
+    <!-- Main Content -->
+    <main class="container">
 
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Form</h2>
 
-<section class="contact-container">
+            <form>
+                <label>Name *</label>
+                <input type="text" required>
 
-    <!-- Contact Form -->
-    <div class="contact-form">
-        <h2>Contact Form</h2>
+                <label>Email *</label>
+                <input type="email" required>
 
-        <form>
-            <label>Name *  </label>
-            <input type="text" required><br>
+                <label>Phone</label>
+                <input type="tel">
 
-            <label>Email * </label>
-            <input type="email" required><br>
+                <label>Message *</label>
+                <textarea rows="5" required></textarea>
 
-            <label>Phone * </label>
-            <input type="text"><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
-            <label>Message *</label>
-            <textarea rows="5" required></textarea><br>
+        <!-- Office Info -->
+        <section class="office-info">
+            <h2>Office Info</h2>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+            <p><strong>Address:</strong> 123 Main Street</p>
+            <p><strong>Phone:</strong> +267 123 4567</p>
+            <p><strong>Hours:</strong> 9:00 AM - 5:00 PM</p>
 
-    
-    <div class="office-info">
-        <h2>Office Info</h2>
-        <p><strong>Address:</strong> 123 Main Street</p>
-        <p><strong>Phone:</strong> +267 XXX XXX</p>
-        <p><strong>Hours:</strong> 9:00 AM – 5:00 PM</p>
+            <div class="map">
+                Map Placeholder
+            </div>
+        </section>
 
-        <div class="contact-grid">
-            <div class="form-card">
-                <div class="info-card">
-            
-    </div>
+    </main>
 
-</section>
-
-
-<footer class="footer">
-    <p>© 2026 RealtyCo | Privacy | Terms</p>
-</footer>
- <script src="script.js"></script>
-
-
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 RealtyCo | Privacy | Terms</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
